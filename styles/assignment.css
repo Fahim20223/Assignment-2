@@ -57,6 +57,11 @@ nav ul a {
   align-items: center;
   margin-bottom: 120px;
 }
+.banner-h,
+.banner-h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
 .nav-pic img {
   width: 100%;
 }
@@ -72,7 +77,7 @@ nav ul a {
 
 .card-h {
   font-size: 3.25rem;
-  font-weight: 700px;
+  font-weight: bold;
   /* text-align: center; */
   margin-left: 0px;
 }
@@ -113,7 +118,7 @@ nav ul a {
   margin-bottom: 200px;
 }
 .flower-img-titles {
-  font-weight: 700;
+  font-weight: bold;
   font-size: 3.25rem;
   /* margin-left: 60px; */
   margin-bottom: 20px;
@@ -159,19 +164,24 @@ nav ul a {
   margin-bottom: 120px;
 }
 .deals {
-  /* font-weight: 700; */
-  /* font-size: 3.25rem; */
+  font-weight: bold;
+  font-size: 3.25rem;
 }
 
 .bg-1 {
-  background-image: url(../assets/deal-bloom.png);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../assets/deal-bloom.png);
   background-repeat: no-repeat;
   border-radius: 20px;
   width: 100%;
   /* width: 0px; */
   /* height: 200px; */
   background-size: cover;
-
+  /* filter: brightness(50%); */
   /* z-index: 1; */
 }
 .bg-container {
@@ -199,7 +209,12 @@ nav ul a {
   width: 100%;
 }
 .bg-2 {
-  background-image: url(../assets/deal-ana.png);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../assets/deal-ana.png);
   background-repeat: no-repeat;
   border-radius: 20px;
   background-size: cover;
@@ -231,7 +246,12 @@ nav ul a {
   position: relative;
 }
 .bg-3 {
-  background-image: url(../assets/deal-zabo.png);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(../assets/deal-zabo.png);
 
   width: 100%;
   background-repeat: no-repeat;
@@ -251,7 +271,7 @@ nav ul a {
   /* width: 100%; */
 }
 .last-bg {
-  margin-bottom: 50px;
+  /* margin-bottom: 50px; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -313,6 +333,7 @@ footer ul a {
 .footer {
   justify-content: space-around;
   margin-left: 0px;
+  margin-top: 50px;
 
   /* align-self: center; */
   margin-bottom: 30px;
@@ -362,6 +383,7 @@ footer ul a {
   }
   .bg-container {
     flex-direction: column;
+    margin-bottom: 40px;
   }
   .bg-files {
     /* height: 200px; */
@@ -391,5 +413,22 @@ footer ul a {
   }
   .last-bg-title {
     font-size: 1.25rem;
+  }
+  .banner-h,
+  .banner-h2 {
+    font-size: 1.5rem;
+  }
+  .card-h {
+    font-size: 1.5rem;
+  }
+  .deals {
+    font-size: 2rem;
+  }
+  .flower-img-titles {
+    font-size: 2.5rem;
+  }
+  .final-bg {
+    /* background-size: cover; */
+    height: 280px;
   }
 }
